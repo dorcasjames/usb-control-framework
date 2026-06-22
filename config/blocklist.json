@@ -1,0 +1,7 @@
+{
+  "devices": [
+    {"vid": "0xdead", "pid": "0xbeef", "name": "Suspicious Device"},
+    {"vid": "0x1234", "pid": "0x5678", "name": "Blacklisted USB"},
+    {"vid": "0xbad0", "pid": "0xbad1", "name": "Rogue USB Implant"}
+  ]
+}

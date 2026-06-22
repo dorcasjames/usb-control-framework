@@ -1,0 +1,60 @@
+==============================================================
+   USB DEVICE CONTROL & MONITORING FRAMEWORK
+             SECURITY AUDIT REPORT
+==============================================================
+
+Report Generated : 2026-06-19 03:36:17
+Prepared By      : USB Control Framework v1.0
+Classification   : CONFIDENTIAL
+
+--------------------------------------------------------------
+SECTION 1 - EXECUTIVE SUMMARY
+--------------------------------------------------------------
+This report summarizes all USB device activity and file
+transfer events detected by the monitoring framework.
+All events have been logged with timestamps and SHA256
+integrity hashes for forensic verification.
+
+--------------------------------------------------------------
+SECTION 2 - EVENT STATISTICS
+--------------------------------------------------------------
+  Total USB Events Detected    : 0
+  Total File Audit Events      : 4
+  New Files Detected           : 1
+  Files Modified               : 1
+  Files Deleted                : 1
+  Blocked Device Attempts      : 0
+  Unauthorized Access Flags    : 0
+
+--------------------------------------------------------------
+SECTION 3 - USB DEVICE EVENTS
+--------------------------------------------------------------
+  [2026-06-19 02:47:16] MONITOR STOPPED by user.
+
+--------------------------------------------------------------
+SECTION 4 - FILE AUDIT EVENTS
+--------------------------------------------------------------
+  [2026-06-19 03:05:40] NEW FILE DETECTED | Path: /sdcard/usb_test_monitor/secret.txt | Size: 32 bytes | SHA256: caa5a89d34705cd12eba9e6ace04920d0d522d886ce65d7be9281ac41a10c42f
+  [2026-06-19 03:06:25] FILE MODIFIED | Path: /sdcard/usb_test_monitor/secret.txt | New SHA256: 4fdb2176a5df09fef06c129d1590814951287d5745506c73ae9c288a0b39e4aa
+  [2026-06-19 03:07:25] FILE DELETED | Path: /sdcard/usb_test_monitor/secret.txt
+  [2026-06-19 03:09:35] AUDITOR STOPPED by user.
+
+--------------------------------------------------------------
+SECTION 5 - VIOLATIONS & SUSPICIOUS ACTIVITY
+--------------------------------------------------------------
+  No violations detected in this session.
+
+--------------------------------------------------------------
+SECTION 6 - RECOMMENDATIONS
+--------------------------------------------------------------
+  1. Enforce strict allowlist policy for all USB devices.
+  2. Immediately investigate any BLOCKED device attempts.
+  3. Review all FILE MODIFIED events for data tampering.
+  4. Conduct regular audits of USB activity logs.
+  5. Train staff on USB security and insider threat risks.
+  6. Disable USB ports on sensitive workstations.
+  7. Implement SHA256 integrity checks on critical files.
+
+==============================================================
+END OF REPORT
+==============================================================
